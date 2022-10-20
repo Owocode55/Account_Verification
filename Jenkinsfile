@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        git(url: 'https://github.com/Owocode55/Account_Verification', branch: 'master')
+      }
+    }
+
   }
 }
