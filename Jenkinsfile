@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
-        git(url: 'https://github.com/Owocode55/Account_Verification', branch: 'master')
+        git(url: 'https://github.com/Owocode55/Account_Verification', branch: 'dev')
       }
     }
 
