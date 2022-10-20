@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+	  <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+	  <runtime>
+		  <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+			  <dependentAssembly>
+				  <assemblyIdentity name="System.IO.Compression" publicKeyToken="B77A5C561934E089" culture="neutral" />
+				  <bindingRedirect oldVersion="4.0.0.0" newVersion="4.2.0.0" />
+			  </dependentAssembly>
+		  </assemblyBinding>
+	  </runtime>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="bcpg-jdk14-145">
+      <HintPath>..\..\..\Dependencies\bcpg-jdk14-145.dll</HintPath>
+    </Reference>
+    <Reference Include="bcprov-ext-jdk14-145">
+      <HintPath>..\..\..\Dependencies\bcprov-ext-jdk14-145.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core">
+      <HintPath>..\..\..\Dependencies\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Security">
+      <HintPath>..\..\..\Dependencies\IKVM.OpenJDK.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util">
+      <HintPath>..\..\..\Dependencies\IKVM.OpenJDK.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime">
+      <HintPath>..\..\..\Dependencies\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="pgplib-2.5">
+      <HintPath>..\..\..\Dependencies\pgplib-2.5.dll</HintPath>
+    </Reference>
+    <Reference Include="SSecurityModule">
+      <HintPath>..\..\..\Dependencies\SSecurityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="wrapper">
+      <HintPath>..\..\..\Dependencies\wrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="wrappertest">
+      <HintPath>..\..\..\Dependencies\wrappertest.dll</HintPath>
+    </Reference>
+    <Reference Include="XpressNipEncryptionLibrary">
+      <HintPath>..\..\..\Dependencies\XpressNipEncryptionLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+	  <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+	  <runtime>
+		  <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+			  <dependentAssembly>
+				  <assemblyIdentity name="System.IO.Compression"
+									publicKeyToken="B77A5C561934E089"
+									culture="neutral" />
+				  <bindingRedirect oldVersion="4.0.0.0"
+								   newVersion="4.2.0.0"/>
+			  </dependentAssembly>
+		  </assemblyBinding>
+	  </runtime>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.Extensions.ApiDescription.Client" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="NSwag.ApiDescription.Client" Version="13.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="RestSharp" Version="106.12.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.8.1" />
+    <PackageReference Include="System.ServiceModel.Primitives" Version="4.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Com.Xpresspayment.AVS.Data\Com.Xpresspayments.AVS.Data.csproj" />
+    <ProjectReference Include="..\Com.Xpresspayments.AVS.Domain\Com.Xpresspayments.AVS.Common.csproj" />
+    <ProjectReference Include="..\Com.Xpresspayments.AVS.Repository\Com.Xpresspayments.AVS.Repository.csproj" />
+    <ProjectReference Include="..\XpressPaymentNipLibrary\XpressPaymentNipLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+</Project>
